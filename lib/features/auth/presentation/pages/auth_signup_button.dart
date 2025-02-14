@@ -2,6 +2,7 @@ import 'package:blogging_app/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AuthSignupButton extends StatelessWidget {
+  
   final String buttonText;
   const AuthSignupButton({super.key, required this.buttonText,});
 
