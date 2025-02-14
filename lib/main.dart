@@ -1,9 +1,16 @@
+import 'package:blogging_app/core/secrets/app_secrets.dart';
 import 'package:blogging_app/core/theme/app_theme.dart';
 import 'package:blogging_app/features/auth/presentation/pages/login_page.dart';
 // import 'package:blogging_app/features/auth/presentation/pages/signup_page.dart';
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized(); //always use this on top whenever using 'await'
+  final supabase = await Supabase.initialize(
+    url:AppSecrets.supabaseUrl,
+    anonKey: AppSecrets.supabaseAPI,
+  );
   runApp(const MyApp());
 }
 
