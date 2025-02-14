@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   fpdart: ^1.1.1
   supabase_flutter: ^2.8.3
+  flutter_bloc: ^9.0.0
 
 dev_dependencies:
   flutter_test:
