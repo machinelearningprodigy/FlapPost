@@ -5,6 +5,10 @@ import 'package:blogging_app/features/auth/presentation/widgets/auth_field.dart'
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
+  // from signup to sign in navigation route
+    static route() => MaterialPageRoute(
+                      builder: (context) => const LoginPage(),
+                  );
   const LoginPage({super.key});
 
   @override
@@ -52,9 +56,7 @@ class _LoginPageState extends State<LoginPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => const SignUpPage(),
-                    ),
+                    SignUpPage.route(),
                   );
               },
                 child: RichText(
