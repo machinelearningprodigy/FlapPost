@@ -36,8 +36,8 @@ This project follows **Robert C. Martin's** Clean Architecture principles:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/machinelearningprodigy/FlapPost.git
+cd FlapPost
 ```
 
 ### 2️⃣ Install Dependencies
