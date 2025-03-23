@@ -10,6 +10,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+
+
+
 void main() async {
   WidgetsFlutterBinding
       .ensureInitialized(); //always use this on top whenever using 'await'
